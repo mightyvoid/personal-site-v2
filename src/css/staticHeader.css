@@ -162,6 +162,7 @@ background-color: rgb(34, 255, 0);
   text-decoration: none;
   font-weight: 800;
   transition: color 0.5s ease;
+  cursor: pointer;
 }
 
 .ham-menu-item:hover{

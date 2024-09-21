@@ -1,0 +1,70 @@
+.contact-form-container{
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    font-weight: 800;
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.form-label{
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.close-form-button{
+    background-color: #b6d943;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 10%;
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
+}
+
+.close-form-button:hover {
+    background-color: #3900f5;
+  }
+
+
+.form-submit-btn {
+    background-color: #4CAF50;
+    font-weight: 800;
+    margin:5%;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+.form-submit-btn:hover {
+    background-color: #45a049;
+  }
+
+.form-result-feedback{
+    font-weight: 600;
+    margin: 5%;
+    display: block;
+}
+.close-icon-container{
+    display: flex;
+    justify-content: center;
+}
+.form-input{
+    text-align: center;
+    width: 90%;
+    padding: 2%;
+    margin: 1%;
+    display: block;
+    justify-content: center !important;
+    align-items: center !important;
+}

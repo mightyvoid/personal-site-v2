@@ -2,7 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './css/staticHeader.css'; // We'll define the CSS in a separate file
 import { scrollIntoView } from './utils';
 
- export const StaticHeader: React.FC = () => {
+interface HamMenuProps {
+  modalIsOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+}
+
+
+
+ export const StaticHeader: React.FC<HamMenuProps> = ({ modalIsOpen, openModal, closeModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
 
@@ -31,8 +39,8 @@ import { scrollIntoView } from './utils';
       <li><a  onClick={()=>scrollIntoView('landing-page-container')}>Home</a></li>
         <li><a  onClick={()=>scrollIntoView('experience-main-container')}>Work</a></li>
         <li><a href="#contact" >Projects</a></li>
-        <li><a href="#about">Contact</a></li>
-        <li><a href="#contact">Social</a></li>
+        <li><a onClick={()=>openModal()}>Contact</a></li>
+        <li><a >Social</a></li>
       </ul>
     </nav>
   </>
