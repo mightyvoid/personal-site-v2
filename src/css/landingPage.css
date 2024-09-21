@@ -1,0 +1,118 @@
+.landing-page-container{
+    display: flex;
+    height: 100vh;
+}
+
+.right-part {
+    flex-basis: 40%;  
+    display: flex; /* Optional: allows centering content within divs */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+
+  .left-part{
+    flex-basis: 60%; 
+    flex-shrink: -1;
+    display: flex; /* Optional: allows centering content within divs */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+
+
+
+.left-inner-container{
+    display: flex;
+    height: auto;
+    flex: 1; /* Each div will take equal space */
+    /* border: 5px solid red; */
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+.first-text{
+    flex-basis: 50%; /* Takes up half the container */
+    height: 200px; /* Fixed height */
+}
+
+
+.second-text{
+    flex-basis: 50%; /* Takes up half the container */
+    height: 400px; /* Fixed height */
+    overflow: hidden;
+}
+
+
+#hello-intro{
+    font-size: 40px;
+    transform: rotate(-5deg);
+    font-style: italic;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.Typewriter__wrapper{
+    display: block;
+    font-weight: 800;
+    font-size: 6em;
+    color: rgb(18, 186, 32);
+    text-shadow: 3px 3px 0 rgb(234, 255, 0); /* Shadow behind text */
+}
+
+.avatar-pic{
+    width: 30vw; /* Set the width of the portrait */
+    height: auto; /* Maintain aspect ratio */
+    transform: rotate(-12deg);
+    border-bottom: 10px solid yellow;
+    border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+    .landing-page-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Typewriter__wrapper{
+
+        display: block;
+        font-weight: 800;
+        font-size: 2em;
+        color: rgb(18, 186, 32);
+    }
+
+    .avatar-pic{
+        width: 30vw; /* Set the width of the portrait */
+        height: auto; /* Maintain aspect ratio */
+        transform: scale(2) !important;
+        transform: rotate(-12deg) !important;
+        flex-basis: 80%;  
+        border-bottom: 10px solid yellow;
+        border-radius: 20%;
+    }
+
+    .right-part {
+        flex-basis: 100%;  
+        display: flex; /* Optional: allows centering content within divs */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+      }
+    
+      .left-part{
+        flex-basis: 40%; 
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+      }
+
+      .second-text{
+        flex-basis: 50%; /* Takes up half the container */
+        height: 15vh; /* Fixed height */
+        overflow: hidden;
+    }
+
+    .left-part{
+        margin-top: 10vh;
+      }
+    
+  }
