@@ -40,7 +40,6 @@ const MyModalComponent: React.FC<ModalProps> = ({ modalIsOpen, openModal, closeM
 
     return (
         <div>
-            <button onClick={openModal}>Open Modal</button>
 
             <Modal
                 isOpen={modalIsOpen}

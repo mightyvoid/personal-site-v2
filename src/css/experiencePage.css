@@ -1,3 +1,30 @@
 .experience-main-container{
-
+padding-top: 5%;
 }
+
+.view-resume-button-container{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.view-resume-button {
+    background-color: #000000;
+    font-weight: 800;
+    margin:20%;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+  }
+  
+.view-resume-button:hover {
+    background-color: #e2eb2d;
+    color: black;
+  }

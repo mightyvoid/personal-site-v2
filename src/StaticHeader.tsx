@@ -38,9 +38,9 @@ interface HamMenuProps {
       <ul className="nav-links">
       <li><a  onClick={()=>scrollIntoView('landing-page-container')}>Home</a></li>
         <li><a  onClick={()=>scrollIntoView('experience-main-container')}>Work</a></li>
-        <li><a href="#contact" >Projects</a></li>
+        <li><a onClick={()=>scrollIntoView('projects-page-main-container')} >Projects</a></li>
         <li><a onClick={()=>openModal()}>Contact</a></li>
-        <li><a >Social</a></li>
+        <li><a onClick={()=>scrollIntoView('projects-page-main-container')}>Social</a></li>
       </ul>
     </nav>
   </>

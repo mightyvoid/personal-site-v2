@@ -5,6 +5,8 @@ import LandingPage from './LandingPage';
 import ExperiencePage from './ExperiencePage';
 import HamMenu from './HamMenu';
 import ContactFormInModal from './ContactFormModal';
+// import SocialPage from './SocialPage';
+import ProjectsPage from './ProjectsPage';
 
 function App() {
   const landingRef = useRef<HTMLElement | null>(null);
@@ -27,6 +29,9 @@ function App() {
       <LandingPage />
       <ExperiencePage />
       <ContactFormInModal modalIsOpen={modalIsOpen} openModal={openModal} closeModal={closeModal} />
+      <ProjectsPage />
+      
+      {/* <SocialPage /> */}
 
     </div>
   );

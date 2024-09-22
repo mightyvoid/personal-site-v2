@@ -9,7 +9,7 @@ interface HamMenuProps {
   closeModal: () => void;
 }
 
-const HamMenu :React.FC<HamMenuProps> = ({ modalIsOpen, openModal, closeModal }) =>{
+const HamMenu: React.FC<HamMenuProps> = ({ modalIsOpen, openModal, closeModal }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,24 +23,34 @@ const HamMenu :React.FC<HamMenuProps> = ({ modalIsOpen, openModal, closeModal })
 
   return (
     <div>
-        <Menu right 
-         isOpen={isOpen} 
-         onStateChange={handleStateChange}
-        >
-        <a id="home" className="ham-menu-item" onClick={()=>{
+      <Menu right
+        isOpen={isOpen}
+        onStateChange={handleStateChange}
+      >
+        <a id="home" className="ham-menu-item" onClick={() => {
           scrollIntoView('landing-page-container')
           closeMenu()
-          }} >Home</a>
-        <a id="about" className="ham-menu-item" onClick={()=>{
-        scrollIntoView('experience-main-container')
-        closeMenu()}
-        }>About</a>
-        <a id="contact" className="ham-menu-item" onClick={()=>{
+        }} >Home</a>
+        <a id="about" className="ham-menu-item" onClick={() => {
+          scrollIntoView('experience-main-container')
+          closeMenu()
+        }
+        }>Work</a>
+      <a id="contact" className="ham-menu-item" onClick={() => {
+   scrollIntoView('projects-page-main-container')
+          closeMenu()
+        }}>Projects</a>
+        <a id="contact" className="ham-menu-item" onClick={() => {
           openModal()
           closeMenu()
-          }}>Contact</a>
-            
-        </Menu>
+        }}>Contact</a>
+        
+        <a id="contact" className="ham-menu-item" onClick={() => {
+          scrollIntoView('projects-page-main-container')
+          closeMenu()
+        }}>Social</a>
+
+      </Menu>
     </div>
   )
 }
