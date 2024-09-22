@@ -1,0 +1,25 @@
+.social-icons {
+    display: flex;
+    justify-content: center; /* Align the icons in the center of the container */
+    gap: 20px; /* Space between icons */
+    margin-top: 10%;
+  }
+  
+  .social-icons a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+  }
+
+  .connect-with-me{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  

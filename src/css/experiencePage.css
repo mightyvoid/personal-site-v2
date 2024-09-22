@@ -28,3 +28,9 @@ padding-top: 5%;
     background-color: #e2eb2d;
     color: black;
   }
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}

@@ -48,6 +48,10 @@ function ExperiencePage() {
     <div>
       <p style={{textAlign:'center'}}>For updated/latest resume kindly check my linkedIn or contact me.</p>
     </div>
+    <div className='skills-container'>
+      <span style={{fontWeight:800}}>Skills:&nbsp;&nbsp;</span>
+      <span> ReactJs, Node(Intermediate), Javascript, HTML, CSS, Typescript, Python(Basic Scripting), Linux, CI/CD, GIT.</span>
+    </div>
       <Modal
         isOpen={modalIsOpen}
 

@@ -1,0 +1,16 @@
+.projects-card-container{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.projects-note-div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.project-note-1{
+    font-weight: 600;
+    color: grey;
+    max-width: 60%;
+}
