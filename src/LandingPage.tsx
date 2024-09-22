@@ -17,9 +17,6 @@ function LandingPage() {
                     onInit={(typewriter) => {
                         typewriter
                         .typeString('Navin Ravindran')
-                        .callFunction(() => {
-                            console.log('String typed out!');
-                        })
                         .pauseFor(2000)
                         .changeDelay(20)
                         .deleteAll()
@@ -43,7 +40,7 @@ function LandingPage() {
 
     </div>
     <div className='right-part'>
-    <img src={myAvatar  } alt="avatar-pic" className='avatar-pic'/>
+    <img src={myAvatar} alt="avatar-pic" className='avatar-pic'/>
     </div>
 
   </div>
