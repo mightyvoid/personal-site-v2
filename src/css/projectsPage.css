@@ -14,3 +14,14 @@
     color: grey;
     max-width: 60%;
 }
+
+@media (max-width:768px) {
+    .projects-card-container{
+        padding: 2%;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+}

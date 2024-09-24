@@ -34,3 +34,39 @@ padding-top: 5%;
   justify-content: center;
   padding: 5%;
 }
+
+@media (max-width:768px){
+  .ReactModal__Content.ReactModal__Content--after-open {
+    max-width: 85vw;
+    max-height: 70vh;
+}
+
+.skills-container{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.view-resume-button {
+  background-color: #000000;
+  font-weight: 800;
+  margin:10%;
+  border: none;
+  color: white;
+  /* padding: 12px 24px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.view-resume-button:hover {
+  background-color: #e2eb2d;
+  color: black;
+}
+}

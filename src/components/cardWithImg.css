@@ -47,12 +47,19 @@
   
   @media (max-width:768px){
     .card-content p {
-      /* display: none; */
-      font-size: 14px;
+      font-size: 12px;
       color: #333;
-      margin-bottom: 10px;
+      flex:1;
       text-overflow: ellipsis;
-      max-height: 25px;
+      display: block;
+    }
+
+    .card-content {
+      display: flex;
+      padding: 5px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
     }
 
     .card {
@@ -61,8 +68,17 @@
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      max-width: 250px;
+      max-width: 280px;
       max-height: 270px;
+      margin: 10px;
+    }
+    #card-checkout-link{
+      /* display: block; */
+      width: 10px;
+      height: 12px;
+      flex-basis: 20%;
+      font-size: 10px;
+      text-align: center;
       margin: 10px;
     }
   }
